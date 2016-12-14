@@ -5,7 +5,7 @@ function[Y, D, theta, delta_weight_prev] = batch_training(...
 samples_num = size(training_images,1);
 NL = size(LS, 2);    %num of layers including input and output
 learning_rate = 0.01;
-RP = 0.0;   %regularization parameter
+RP = 0.8;   %regularization parameter
 num_of_labels = 10;
 D = zeros(num_of_labels, samples_num);  
 %D has desired response such that for any label, the bit for its index is 1

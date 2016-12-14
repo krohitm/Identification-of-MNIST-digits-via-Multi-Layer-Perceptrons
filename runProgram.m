@@ -8,8 +8,8 @@ testing_images_bkp = testing_images;
 validation_images_bkp = validation_images;
 
 [training_images, validation_images, testing_images] = ...
-    downsampling(training_images, validation_images, testing_images,...
-    downsampling_factor);
+    downsampling(training_images_bkp, validation_images_bkp, ...
+    testing_images_bkp, downsampling_factor);
 
 num_of_input_units = size(training_images,2);
 num_of_output_units = 10;
